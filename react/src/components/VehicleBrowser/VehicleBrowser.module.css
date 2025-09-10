@@ -1,0 +1,98 @@
+:root {
+    --color-asphalt: #2E2E2E;
+    --color-line-yellow: #FFD60A;
+    --color-sign-green: #007F5F;
+    --color-traffic-red: #D90429;
+    --color-warning-orange: #F77F00;
+    --color-sky-blue: #00A6FB;
+    --color-light-gray: #E5E5E5;
+    --color-medium-gray: #8D99AE;
+    --color-white: #FFFFFF;
+  }
+  
+  .wrapper {
+    padding: 1rem;
+    max-width: 28rem;
+    margin: 0 auto;
+    background-color: var(--color-sky-blue);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--color-asphalt);
+    border-bottom: 4px solid var(--color-line-yellow);
+    padding-bottom: 0.25rem;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: var(--color-asphalt);
+  }
+  
+  .select,
+  .input {
+    width: 100%;
+    border: 2px solid var(--color-medium-gray);
+    border-radius: 6px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-white);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+  }
+  
+  .select:focus,
+  .input:focus {
+    border-color: var(--color-line-yellow);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 214, 10, 0.4);
+  }
+  
+  .error {
+    color: var(--color-traffic-red);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .button {
+    width: 100%;
+    background-color: var(--color-line-yellow);
+    color: var(--color-asphalt);
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--color-sign-green);
+    transform: translateY(-1px);
+  }
+  
+  .loading {
+    font-style: italic;
+    color: var(--color-line-yellow);
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-bottom: 4px solid var(--color-line-yellow);
+    padding-bottom: 0.25rem;
+  }

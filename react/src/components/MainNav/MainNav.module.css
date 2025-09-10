@@ -1,0 +1,87 @@
+:root {
+    --color-asphalt: #2E2E2E;
+    --color-line-yellow: #FFD60A;
+    --color-sign-green: #007F5F;
+    --color-traffic-red: #D90429;
+    --color-warning-orange: #F77F00;
+    --color-sky-blue: #00A6FB;
+    --color-light-gray: #E5E5E5;
+    --color-medium-gray: #8D99AE;
+    --color-white: #FFFFFF;
+  }
+  
+  .header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-sky-blue);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    z-index: 1000;
+  }
+
+  #view-home {
+    padding-bottom: 0;
+    box-sizing: border-box
+  }
+  
+  .navList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0 auto;
+  }
+  
+  .navItem {
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    background-color: var(--color-white);
+    color: var(--color-asphalt);
+    border: 2px solid var(--color-medium-gray);
+    font-weight: 700;
+    text-decoration: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease, background-color 0.2s ease;
+  }
+  
+  .navItem:hover {
+    border-color: var(--color-line-yellow);
+    box-shadow: 0 0 0 2px rgba(255, 214, 10, 0.35);
+    transform: translateY(-1px);
+  }
+  
+  .active {
+    background-color: var(--color-sign-green);
+    color: var(--color-asphalt);
+    border-color: var(--color-sign-green);
+    box-shadow: 0 0 0 2px rgba(255, 214, 10, 0.35);
+  }
+  
+  .primary {
+    background-color: var(--color-line-yellow);
+    color: var(--color-asphalt);
+    border-color: var(--color-line-yellow);
+  }
+  .primary:hover {
+    background-color: var(--color-sign-green);
+    color: var(--color-white);
+    border-color: var(--color-sign-green);
+  }
+  
+  .danger {
+    background-color: var(--color-white);
+    color: var(--color-asphalt);
+    border-color: var(--color-traffic-red);
+  }
+  .danger:hover {
+    background-color: var(--color-traffic-red);
+    color: var(--color-white);
+    border-color: var(--color-traffic-red);
+  }
+  
+  /* body {
+    padding-top: 3.5rem;
+  } */
+  

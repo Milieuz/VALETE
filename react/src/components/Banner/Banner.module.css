@@ -1,0 +1,15 @@
+.banner {
+  grid-column: 1 / 4; 
+  grid-row: 1 / 2;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 200;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  display: block;
+}
